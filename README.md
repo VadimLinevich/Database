@@ -1,2 +1,2 @@
 # Project theme: Metacritic analog
-# Linevich Vadim 053503
+## Linevich Vadim 053503
