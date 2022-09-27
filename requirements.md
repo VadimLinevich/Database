@@ -77,3 +77,7 @@ DB description
     * AgeRating - text(game age rating)
     * Mode - text(game mode)
     * SystemRequirements - text(game system requirements)
+---
+DB NF Scheme:
+
+![alt text](pictures/DBSchemeNF.png)
