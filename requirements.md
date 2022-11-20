@@ -15,7 +15,7 @@
 ---
 Scheme:
 
-![alt text](pictures/DBScheme.png)
+![alt text](pictures/NotNFDBScheme.png)
 ---
 DB description
 
@@ -80,4 +80,4 @@ DB description
 ---
 DB NF Scheme:
 
-![alt text](pictures/DBSchemeNF.png)
+![alt text](pictures/NFDBScheme.png)
