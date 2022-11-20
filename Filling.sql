@@ -15,18 +15,18 @@ values
 ('Deus ex: Invisible War', 'link', 'Deus ex sequel', '2003-12-02', 'Windows, Xbox', '18+', 'single-player', 'Video Card: Geforce3, Free Disk Space: 2GB'),
 ('Detroit: Become Human', 'link', 'Adventure video hame', '2018-05-25', 'Windows, Playstation 4', '18+', 'single-player', 'Video Card: Geforce GTX 1060, Free Disk Space: 55GB');
 
-insert into Reviews(idgame, content, visitor)
+insert into Reviews(iduser, idgame, content)
 values
-(1, 'One of the greatest game of all time', 3),
-(1, 'Legendary game and legendary series', 1),
-(2, 'Mediocre sequel', 1),
-(3, 'Amazing story + Connor', 3),
-(3, 'Love this game', 2);
+(3, 1, 'One of the greatest game of all time'),
+(1, 1, 'Legendary game and legendary series'),
+(1, 2, 'Mediocre sequel'),
+(3, 3, 'Amazing story + Connor'),
+(2, 3, 'Love this game');
 
-insert into Ratings(idgame, visitor, grade)
+insert into Ratings(iduser, idgame, grade)
 values
 (1, 1, 10),
-(2, 1, 6),
+(1, 2, 6),
 (3, 3, 9);
 
 insert into Genres(name)

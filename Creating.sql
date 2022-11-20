@@ -43,23 +43,23 @@ create table if not exists Games
 
 create table if not exists Reviews
 (
-	Id serial primary key,
+	IdUser integer,
 	IdGame integer,
 	foreign key (IdGame) references Games (Id) on delete restrict,
+	foreign key (IdUser) references Users (Id) on delete restrict,
 	Content varchar(512),
-	Visitor integer,
-	unique(Id, IdGame, Visitor)
+	primary key(IdUser, IdGame)
 );
 
 create table if not exists Ratings
 (
-	Id serial primary key,
+	IdUser integer,
 	IdGame integer,
 	foreign key (IdGame) references Games (Id) on delete restrict,
-	Visitor integer,
+	foreign key (IdUser) references Users (Id) on delete restrict,
 	Grade integer,
 	check(Grade >= 0 and Grade <= 10),
-	unique(Id, IdGame, Visitor)
+	primary key(IdUser, IdGame)
 );
 
 create table if not exists Genres
