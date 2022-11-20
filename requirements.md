@@ -36,14 +36,12 @@ DB description
    * Action - varchar(user action)
    * Date - time(time of action)
 4. Review - game review
-   * **IdReview** - uuid
-   * IdGame - uuid(foreign key)
+   * **IdUser** - uuid(foreign key)
+   * **IdGame** - uuid(foreign key)
    * Content - varchar(review content)
-   * User - uuid(IdUser, one to one review user)
 5. Rating - game score
-   * **IdRating** - uuid
-   * IdGame - uuid(foreign key)
-   * User - uuid(IdUser, one to one rating user)
+   * **IdUser** - uuid(foreign key)
+   * **IdGame** - uuid(foreign key)
    * Grade - int(game score from 1 to 10)
 6. Genre - game genre
    * **IdGenre** - uuid
